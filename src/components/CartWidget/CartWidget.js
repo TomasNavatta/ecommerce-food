@@ -1,9 +1,10 @@
-import cart from './assets/cart.png'
+import { FaShoppingBag } from "react-icons/fa";
 import '../Navbar/NavBar.css'
 const CartWidget = () => {
     return(
         <div className='carrito'>
-            <img className="imgCarrito" src={cart}/>
+           <i className="imgCarrito" >< FaShoppingBag /></i>
+            {/* <img className="imgCarrito" src={cart}/> */}
             0
            
         </div>
