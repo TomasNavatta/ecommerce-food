@@ -3,14 +3,16 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import CartWidget from '../CartWidget/CartWidget';
-import './NavBar.css'
+import './NavBar.css';
+import logo from './assets/logo.png';
+
 
 
 function NavBar() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" >
       <Container>
-        <Navbar.Brand href="#home">The Fast Food</Navbar.Brand>
+        <img href="#home" className="logo" src={logo}/>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">

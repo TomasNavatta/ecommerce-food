@@ -2,7 +2,7 @@ import cart from './assets/cart.png'
 import '../Navbar/NavBar.css'
 const CartWidget = () => {
     return(
-        <div>
+        <div className='carrito'>
             <img className="imgCarrito" src={cart}/>
             0
            

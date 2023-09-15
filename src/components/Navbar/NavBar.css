@@ -1,4 +1,22 @@
 .imgCarrito{
     width: 2rem;
     margin-right: 1rem;
+ 
+}
+.carrito{
+    margin-right: 2rem;
+    position: absolute;
+    right: 0;
+}
+.logo{
+    width: 8rem;
+    margin-left: 2rem;
+    position: absolute;
+    left: 0;
+}
+
+.navbar{
+    border: 2px black solid;
+    height: 8rem;
+
 }
