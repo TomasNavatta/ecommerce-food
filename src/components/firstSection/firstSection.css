@@ -1,0 +1,27 @@
+.divContainer{
+    display: flex;
+    justify-content: center;
+
+}
+.productos{
+    display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+   gap: 3rem;
+}
+
+.card{
+    width:20rem;
+    border: none;
+    
+   
+}
+
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
