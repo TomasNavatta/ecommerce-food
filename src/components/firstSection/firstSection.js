@@ -7,6 +7,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import productos from '../Products/products';
 import './firstSection.css'
+import Modal from '../modals/modal';
 
 export default function MediaCard() {
   return (
@@ -28,13 +29,17 @@ export default function MediaCard() {
         </div>
       </CardContent>
       <CardActions>
-        <Button className="buttonCard" size="small">Ver Mas</Button>
+      <Button className="buttonCard" size="small">{<Modal/>}</Button>
       </CardActions>
     </div>
     ))}
     </div>
 
     </div>
+
+
+
+
    
   );
 }
