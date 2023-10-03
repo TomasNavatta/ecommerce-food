@@ -1,7 +1,7 @@
 
 const productos = [
     {
-        img:'./assets/hamburguesa.jpg',
+        img:'../assets/hamburguesa.jpg',
         title:'doble cuarto',
         info:'2 medallones de carne, 2 fetas de cheddar',
     },

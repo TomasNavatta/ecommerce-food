@@ -1,5 +1,4 @@
 import * as React from 'react';
-import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
@@ -7,7 +6,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import productos from '../Products/products';
 import './firstSection.css'
-import Modal from '../modals/modal';
+
 
 export default function MediaCard() {
   return (
@@ -29,17 +28,11 @@ export default function MediaCard() {
         </div>
       </CardContent>
       <CardActions>
-      <Button className="buttonCard" size="small">{<Modal/>}</Button>
+      <Button className="buttonCard" size="small">Ver Mas</Button>
       </CardActions>
     </div>
     ))}
     </div>
-
     </div>
-
-
-
-
-   
   );
 }
