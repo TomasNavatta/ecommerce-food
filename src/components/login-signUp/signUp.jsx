@@ -1,5 +1,5 @@
 
-import '../steelshets/signup.css'
+import '../stylesshets/signup.css'
 const loginSignUp = () => {
     return(
         <div>

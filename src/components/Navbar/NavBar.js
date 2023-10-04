@@ -1,5 +1,5 @@
 import CartWidget from '../CartWidget/CartWidget';
-import '../steelshets/NavBar.css';
+import '../stylesshets/NavBar.css';
 import logo from './assets/logo (3).png';
 import { FaRegUserCircle } from "react-icons/fa";
 import { HiMiniBars3BottomLeft } from "react-icons/hi2";
