@@ -1,5 +1,5 @@
 import ItemCount from '../Count/Count';
-import './modal.css'
+import '../steelshets/modal.css'
 
 
 const Modals = ({ isOpen, onClose, image, title, info, stock }) => {

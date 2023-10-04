@@ -1,4 +1,4 @@
-import './footer.css'
+import '../steelshets/footer.css'
 import logo from '../Navbar/assets/logo (3).png';
 import { FaInstagram } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa";

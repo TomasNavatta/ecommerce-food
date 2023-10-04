@@ -3,7 +3,7 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import productos from '../Products/products';
-import '../firstSection/firstSection.css'
+import '../steelshets/firstSection.css'
 import {useState} from 'react';
 import DetailsCard from '../DetailsCard/detailsCard';
 

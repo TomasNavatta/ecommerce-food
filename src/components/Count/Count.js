@@ -1,5 +1,5 @@
 import { useState } from "react"
-import './count.css'
+import '../steelshets/count.css'
 
 const ItemCount = ({stock, initial, onAndd})=> {
     const [quantity, setQuantity] = useState(initial)
