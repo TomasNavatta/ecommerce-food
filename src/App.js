@@ -8,6 +8,7 @@ import Menu from './pages/menu';
 import Home from './pages/home';
 import Promociones from './pages/promociones';
 import Nosotros from './pages/nosotros';
+import NotFound from './pages/notFound';
 
 
 
@@ -19,9 +20,10 @@ function App() {
       <NavBar/>
       <Routes>
       <Route path='/' element={<Home/>} />
-        <Route path='/menu' element={<Menu/>} />
-        <Route path='/promociones' element={<Promociones/>} />
-        <Route path='/nosotros' element={<Nosotros/>} />
+        <Route path='/category/menu' element={<Menu/>} />
+        <Route path='/category/promociones' element={<Promociones/>} />
+        <Route path='/category/nosotros' element={<Nosotros/>} />
+        <Route path='*'element={<NotFound/>}/>
         </Routes>
         </BrowserRouter> 
         {/* <footer>

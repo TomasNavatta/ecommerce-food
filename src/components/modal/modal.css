@@ -1,0 +1,53 @@
+/* Estilos para el fondo oscuro del modal */
+.modal-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1); /* Fondo oscuro semi-transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para el contenedor del modal */
+.modal-container {
+    width: 40%;
+    min-height: 30%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative; /* Agrega posición relativa para posicionar el botón */
+}
+
+.buttonModal{   
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.closeModal{
+    color: #333;
+    position: absolute;
+    top: 0  ;
+    right: 16px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.closeModal:hover{
+    color: red;
+}

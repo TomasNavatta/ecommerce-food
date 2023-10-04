@@ -1,0 +1,43 @@
+.buttonNotFound{
+    width: 400px;
+    height: 90px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.8s;
+    
+    
+}
+.buttonNotFound:hover{
+    background-color: rgb(221, 185, 25);
+}
+
+.notFound{
+    height: 550px;
+    min-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+        
+
+}
+.notFoundContainer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+    
+}
+
+
+    

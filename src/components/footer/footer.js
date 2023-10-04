@@ -3,18 +3,19 @@ import logo from '../Navbar/assets/logo (3).png';
 import { FaInstagram } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return(
         <footer>
-            <img className="logoFooter" src={logo}/>
+            <img className="logoFooter" src={logo} alt='logo del footer'/>
           <div className='secciones'>
             <h3>Secciones</h3>
             <ul className='footerItem'>
-        <li><a href=''>Home</a></li>
-        <li><a href=''>Menú</a></li>
-        <li><a href=''>Promociones</a></li>
-        <li><a href=''>Nosotros</a></li>
+        <li><Link  to={"/"} >Home</Link></li>
+        <li><Link  to={"/category/menu"} >Menú</Link></li>
+        <li><Link  to={"/category/promociones"} >Promociones</Link></li>
+        <li><Link  to={"/category/nosotros"} >Nosotros</Link></li>
             </ul>
           </div>
           <div className='contacto'>

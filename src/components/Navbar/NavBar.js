@@ -15,11 +15,11 @@ function NavBar() {
       <img className="logo" src={logo} alt="Logo de la empresa" />
       <ul className='navItem'>
       <li><Link to={"/"}>Home</Link></li>
-        <li><Link to={"/menu"}>Menú</Link></li>
-        <li><Link to={"/promociones"}>promociones</Link></li>
-        <li><Link to={"/nosotros"}>Nosotros</Link></li>
+        <li><Link to={"/category/menu"}>Menú</Link></li>
+        <li><Link to={"/category/promociones"}>promociones</Link></li>
+        <li><Link to={"/category/nosotros"}>Nosotros</Link></li>
       </ul>
-      <i className='SignUp'><a><FaRegUserCircle/></a></i>
+      <i className='SignUp'><FaRegUserCircle/></i>
       <CartWidget />
     </nav>
   );
