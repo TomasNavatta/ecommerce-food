@@ -11,6 +11,13 @@
     align-items: center;
 }
 
+.styleImgDatails {
+    position: relative;
+    border-radius: 5px;
+    width: 90%;
+    height: 430px;
+    object-fit: cover; /* Asegura que la imagen se ajuste sin distorsionarse */
+}
 /* Estilos para el contenedor del modal */
 .modal-container {
     width: 40%;
@@ -19,8 +26,12 @@
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
+   
     position: relative; /* Agrega posición relativa para posicionar el botón */
+}
+
+.imgContainer{
+    text-align: center;
 }
 
 .buttonModal{   

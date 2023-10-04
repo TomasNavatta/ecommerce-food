@@ -1,0 +1,50 @@
+.countContainer{
+  padding-top: 15px;
+  font-family: Lato, sans-serif;
+}
+
+.count{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h4{
+    margin: 0 10px;
+}
+
+.buttonCount{
+    width: 50px;
+    height: 30px;
+    font-family: Roboto, sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    border: 2px ;
+    border-radius: 40px;
+    margin: 5px;
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color: black;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.agregarCarrito{
+    width: 200px;
+    border-radius: 10px;
+    display: block;
+    background-color: black;  
+    color: white;
+    margin-top: 20px;
+    
+  
+}
+
+.centerButton {
+    display: flex;
+    justify-content: center;
+  }
+  

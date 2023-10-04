@@ -13,6 +13,7 @@ import NotFound from './pages/notFound';
 
 
 
+
 function App() {
   return (
     <div>
@@ -26,6 +27,7 @@ function App() {
         <Route path='*'element={<NotFound/>}/>
         </Routes>
         </BrowserRouter> 
+     
         {/* <footer>
       <Footer/>
       </footer> */}

@@ -3,9 +3,9 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import productos from '../Products/products';
-import Modals from '../modal/modal';
 import '../firstSection/firstSection.css'
 import {useState} from 'react';
+import DetailsCard from '../DetailsCard/detailsCard';
 
 
 const Producto = () => {
@@ -41,7 +41,7 @@ const Producto = () => {
             </CardContent>
             <CardActions>
             <button className="buttonCard" size="small" onClick={handleOpenModal}>Ver Mas</button>
-            <Modals isOpen={modalOpen} onClose={handleCloseModal}/>
+            <DetailsCard isOpen={modalOpen} onClose={handleCloseModal} />
             </CardActions>
           </div>
           ))}
