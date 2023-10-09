@@ -1,4 +1,5 @@
 import { FaShoppingBag } from "react-icons/fa";
+    
 import '../stylesshets/NavBar.css'
 const CartWidget = () => {
     return(

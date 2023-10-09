@@ -1,0 +1,9 @@
+.imgBanner{
+   max-height: 800px;
+   width: 100%;
+}
+
+.carousel-indicators {
+    z-index: 0;
+    
+}

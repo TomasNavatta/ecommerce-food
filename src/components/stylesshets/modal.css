@@ -20,6 +20,7 @@
 }
 /* Estilos para el contenedor del modal */
 .modal-container {
+    overflow: hidden;
     width: 40%;
     min-height: 30%;
     background-color: white;
@@ -35,19 +36,16 @@
 }
 
 .buttonModal{   
+    width: 100%;
     background: #333;
     color: #fff;
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
     margin-bottom: 1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
     cursor: pointer;
     margin-top: 10px;
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    float: right;
 }
 
 .closeModal{

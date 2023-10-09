@@ -5,7 +5,7 @@ import Footer from './components/footer/footer';
 // import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Menu from './pages/menu';
-import Home from './pages/home';
+import Home from './pages/home/home';
 import Promociones from './pages/promociones';
 import Nosotros from './pages/nosotros';
 import NotFound from './pages/notFound';

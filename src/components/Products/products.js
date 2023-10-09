@@ -65,10 +65,10 @@ const productos = [
     }
 ]
 
-export const getProductById = (productId) => {
+export const getProductById = (productosId) => {
     return new Promise((resolve) => {
         setTimeout(() => {
-            resolve(productos.find(prod => prod.id === productId))
+            resolve(productos.find(prod => prod.id === productosId))
         }, 500)
     })
 }
