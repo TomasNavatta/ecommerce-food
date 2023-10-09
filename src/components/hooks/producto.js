@@ -13,6 +13,7 @@ import { Link } from 'react-router-dom';
 
 const Producto = () => {
     const [modalOpen, setModalOpen] = useState(false)
+    
 
     const handleOpenModal  = () => {
       setModalOpen(true)
@@ -44,7 +45,7 @@ const Producto = () => {
             </CardContent>
             <CardActions>
             
-            <Link  to={'/detalle/+productos.id'}> <button className="buttonCard"> Ver Mas</button></Link>
+            <Link  to={`/detalle/${products.id}`}> <button className="buttonCard"> Ver Mas</button></Link>
 
             <DetailsCard isOpen={modalOpen} onClose={handleCloseModal}  />
             </CardActions>
