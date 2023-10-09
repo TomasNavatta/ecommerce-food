@@ -9,6 +9,8 @@ import DetailsCard from '../DetailsCard/detailsCard';
 import { Link } from 'react-router-dom';
 
 
+
+
 const Producto = () => {
     const [modalOpen, setModalOpen] = useState(false)
 
@@ -42,7 +44,8 @@ const Producto = () => {
             </CardContent>
             <CardActions>
             <button className="buttonCard" size="small" onClick={handleOpenModal}>Ver Mas</button>
-            <Link><button className="buttonCard" to={'detalle/+products.id'}>Ver Mas</button></Link>
+            <Link  to={'/detalle/+productos.id'}> <button className="buttonCard"> Ver Mas</button></Link>
+
             <DetailsCard isOpen={modalOpen} onClose={handleCloseModal}  />
             </CardActions>
           </div>
