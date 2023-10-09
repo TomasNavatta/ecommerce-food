@@ -1,8 +1,9 @@
+import { Link } from 'react-router-dom';
 import ItemCount from '../Count/Count';
 import '../stylesshets/modal.css'
 
 
-const Modals = ({ isOpen, onClose, image, title, info, stock }) => {
+const Modals = ({ isOpen, onClose, image, title, info, stock, id }) => {
   if (!isOpen) return null;
 
   return(
@@ -19,6 +20,7 @@ const Modals = ({ isOpen, onClose, image, title, info, stock }) => {
   <p>stock:{stock}</p>
   <ItemCount initial={1} stock={stock} onAndd={(quantity) => console.log('cantidad agregada', quantity)}/>
         <button className='buttonModal' onClick={onClose}>cerrar</button>
+        <Link  to={`/detalle/${id}`}><button className="buttonModalComprar">comprar</button></Link> 
     </div>
 </div>
 

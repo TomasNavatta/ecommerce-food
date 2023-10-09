@@ -26,7 +26,7 @@ function App() {
         <Route path='/category/promociones' element={<Promociones/>} />
         <Route path='/category/nosotros' element={<Nosotros/>} />
         <Route path='*'element={<NotFound/>}/>
-        <Route path='/detalle/:id' element={<DetailsCard/>} />
+          <Route path='/detalle/:id' element={<DetailsCard/>} />
         </Routes>
         </BrowserRouter> 
      

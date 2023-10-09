@@ -8,8 +8,7 @@
 .carrito{
     color: white;
     margin-right: 2rem;
-    position: absolute;
-    right: 0;
+    float: right;
 }
 
 
@@ -70,8 +69,9 @@ ul a:hover{
 .SignUp{
     color: white;
     font-size: 2rem;
-    position: absolute;
-    right: 7%;
+   float: right;
+   padding-right: 3rem;
+
 } 
 
 .menuBurger{
