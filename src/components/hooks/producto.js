@@ -6,6 +6,7 @@ import productos from '../Products/products';
 import '../stylesshets/firstSection.css'
 import {useState} from 'react';
 import DetailsCard from '../DetailsCard/detailsCard';
+import { Link } from 'react-router-dom';
 
 
 const Producto = () => {
@@ -41,7 +42,8 @@ const Producto = () => {
             </CardContent>
             <CardActions>
             <button className="buttonCard" size="small" onClick={handleOpenModal}>Ver Mas</button>
-            <DetailsCard isOpen={modalOpen} onClose={handleCloseModal} />
+            <Link><button className="buttonCard" to={'detalle/+products.id'}>Ver Mas</button></Link>
+            <DetailsCard isOpen={modalOpen} onClose={handleCloseModal}  />
             </CardActions>
           </div>
           ))}

@@ -2,13 +2,14 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './components/Navbar/NavBar';
 import Footer from './components/footer/footer';
-// import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Menu from './pages/menu';
 import Home from './pages/home/home';
 import Promociones from './pages/promociones';
 import Nosotros from './pages/nosotros';
 import NotFound from './pages/notFound';
+import DetailsCard from './components/DetailsCard/detailsCard';
+
 
 
 
@@ -25,6 +26,7 @@ function App() {
         <Route path='/category/promociones' element={<Promociones/>} />
         <Route path='/category/nosotros' element={<Nosotros/>} />
         <Route path='*'element={<NotFound/>}/>
+        <Route path='/detalle/:id' element={<DetailsCard/>} />
         </Routes>
         </BrowserRouter> 
      
