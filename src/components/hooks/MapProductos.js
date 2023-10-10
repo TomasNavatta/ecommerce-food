@@ -1,14 +1,17 @@
-import productos from '../Products/products';
+
 import '../stylesshets/firstSection.css'
 import Products from '../Products/productos';
+import Spinner from '../spinner/spinner';
 
-const Producto = () => {
+const Producto = ({data}) => {
     return(
       <div className='divContainer'>
       <div className='mapContainer'>
         
      {
-      productos.map(productos => <Products key={productos.id}{...productos} />)
+      data.length > 0 ?
+      data.map(productos => <Products key={productos.id}{...productos} />)
+      : <Spinner/>
      }
       </div>
       </div>

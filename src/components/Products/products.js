@@ -64,11 +64,18 @@ const productos = [
         stock: 500
     }
 ]
+export const getdata = () => {
+    return new Promise((resolve)=> {
+        setTimeout (() => {
+            resolve(productos)
+        },3000)
+    })
+}
 
 export const getProductById = (productosId) => {
     return new Promise((resolve) => {
        
-            resolve(productos.find(prod => prod.id === productosId))
+            resolve(productos.find(prod => prod.id === parseInt(productosId)))
     })
 }
 

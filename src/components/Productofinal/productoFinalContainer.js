@@ -1,9 +1,12 @@
 import { useEffect, useState } from 'react';
 import { getProductById } from '../Products/products';
-import Modals from '../modal/modal';
+import ProductoFinal from './productoFinal';
+import { useParams } from 'react-router-dom';
 
-const DetailsCard = ({ isOpen, onClose, id }) => {
+const ProductoFinalContainer = () => {
   const [product, setProduct] = useState(null)
+  let{id} = useParams()
+
   useEffect(() => {
     getProductById(1)
     .then(response => {
@@ -12,15 +15,15 @@ const DetailsCard = ({ isOpen, onClose, id }) => {
     .catch(error => {
       console.error(error)
     })
-  },[])
+  },[id])
 
   return(
     <div>
-     <Modals isOpen={isOpen} onClose={onClose} {...product}/>
+     <ProductoFinal  {...product}/>
 
 
     </div>
   )
   }
 
-export default DetailsCard;
+export default ProductoFinalContainer;

@@ -4,7 +4,7 @@ const Menu = () => {
     return(
         <div>
            <MediaCard />
-           <DetailsCard />
+       
         </div>
     )
 }

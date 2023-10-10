@@ -9,6 +9,7 @@ import Promociones from './pages/promociones';
 import Nosotros from './pages/nosotros';
 import NotFound from './pages/notFound';
 import DetailsCard from './components/DetailsCard/detailsCard';
+import ProductoFinalContainer from './components/Productofinal/productoFinalContainer';
 
 
 
@@ -26,7 +27,8 @@ function App() {
         <Route path='/category/promociones' element={<Promociones/>} />
         <Route path='/category/nosotros' element={<Nosotros/>} />
         <Route path='*'element={<NotFound/>}/>
-          <Route path='/detalle/:id' element={<DetailsCard/>} />
+          <Route path='/detalle/:id' element={<ProductoFinalContainer/>} />
+
         </Routes>
         </BrowserRouter> 
      
