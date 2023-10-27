@@ -15,7 +15,7 @@ const productos = [
         stock: 400
     },
     {
-        id:'3',
+        id:3,
         image:'../assets/hamburguesa-3.jpg',
         title:'doble cuarto',
         info:'2 medallones de carne, 2 fetas de cheddar',

@@ -36,7 +36,7 @@ const Products = ({ id, image, title, info }) => {
             </div>
             <div>
             <button className="buttonCard" onClick={handleOpenModal}> Ver Mas</button>
-            <DetailsCard isOpen={modalOpen} onClose={handleCloseModal}   />
+            <DetailsCard isOpen={modalOpen} onClose={handleCloseModal} id={id}   />
             </div>
           </div>
      

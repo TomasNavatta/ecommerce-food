@@ -23,13 +23,13 @@
 
 .infoCard {
     flex-grow: 1;
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
   
 }
 
 .buttonCard{
  position: absolute;
- bottom: 0;
+
  border: none;
  background: none;
  color: rgb(100, 100, 226);
@@ -40,6 +40,16 @@
     grid-template-columns: 1fr 1fr 1fr;
     align-items: stretch; /* Asegura que todas las cartas tengan la misma altura */
     gap: 20px; /* Agrega espacio entre las cartas si lo deseas */
+}
+
+@media screen and (max-width: 500px) {
+    .mapContainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 1rem;
+ 
+    }
+
 }
 
   

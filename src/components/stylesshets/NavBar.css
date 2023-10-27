@@ -8,7 +8,6 @@
 .carrito{
     color: white;
     margin-right: 2rem;
-    float: right;
 }
 
 
@@ -29,6 +28,7 @@
 
 nav{
     display: flex;
+    justify-content: space-between;
     align-items: center;
     background-color: black;
     overflow-x: hidden;
@@ -66,12 +66,17 @@ ul a:hover{
     border-bottom: 2px white solid;
 } 
 
+.iconsContainer{
+    display: flex;
+    align-items: center;
+}
+
 
 .SignUp{
     color: white;
     font-size: 2rem;
-   float: right;
-   padding-right: 3rem;
+    margin-right: 1.5rem;
+  
 
 } 
 

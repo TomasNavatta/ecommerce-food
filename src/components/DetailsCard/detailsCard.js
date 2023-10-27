@@ -5,7 +5,7 @@ import Modals from '../modal/modal';
 const DetailsCard = ({ isOpen, onClose, id }) => {
   const [product, setProduct] = useState(null)
   useEffect(() => {
-    getProductById(1)
+    getProductById(id)
     .then(response => {
       setProduct(response)
     })

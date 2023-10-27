@@ -1,46 +1,83 @@
-.cardproductoFinalContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.divContainerProductoFinal{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.cardProductoFinal {
-    width: 300px; 
-    border: 1px solid #ccc; 
-    border-radius: 10px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    padding: 20px; 
-    text-align: center; 
-  }
-  
-  .card-image {
-    width: 100%; 
-    border-radius: 5px; 
-  }
-  
-  .card-title {
-    font-size: 1.5em; 
-    margin-top: 10px; 
-    color: #333; 
-  }
-  
-  .card-info {
-    margin-top: 15px; 
-    color: #666; 
-  }
-  
-  .card-button {
-    margin-top: 20px; 
-    padding: 10px 20px; 
-    background-color: #007bff; 
-    color: #fff; 
-    border: none; 
-    border-radius: 5px; 
-    cursor: pointer; 
-    transition: background-color 0.3s ease; 
-  }
-  
-  .card-button:hover {
-    background-color: #0056b3; 
-  }
-  
+
+.cardContainerProductoFinal {
+  width: 800px; /* Ancho de la tarjeta */
+  margin: 20px; /* Margen exterior */
+  border: 1px solid #ccc; /* Borde de la tarjeta */
+  border-radius: 20px; /* Esquinas redondeadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.imgContainerProductoFinal{
+  margin: 20px;
+}
+
+.card-img-top {
+  border-radius: 20px;
+  width: 100%; /* La imagen ocupa el 100% del ancho de la tarjeta */
+  height: auto; /* La altura se ajusta automáticamente para mantener la proporción */
+}
+
+.card-body {
+  padding: 20px; /* Espaciado interno del cuerpo de la tarjeta */
+}
+
+.card-title {
+  margin: 0 0 10px 0; /* Margen inferior del título */
+}
+
+.card-text {
+  margin-bottom: 20px; /* Margen inferior del texto descriptivo */
+}
+
+.extras {
+  border-top: 1px solid #ccc; /* Línea superior para separar extras del texto */
+  padding-top: 10px; /* Espaciado interno en la sección de extras */
+}
+.extra{
+  color: black;
+}
+
+.extras ul {
+  list-style: none;
+  padding: 0;
+}
+
+.extras li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px; /* Ajusta el espacio entre los extras */
+}
+
+.extraCheckbox {
+  margin-right: 8px; /* Ajusta el espacio entre el checkbox y el texto */
+}
+
+.price {
+  margin-left: auto; /* Coloca el precio al lado derecho de los extras */
+}
+
+.buttonComprarproductoFinalContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.buttonComprarProductoFinal{
+  width: 80%;
+  background: #333;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 12px;
+    padding: 10px 20px;
+    margin-left: 10px;
+}
+

@@ -1,0 +1,19 @@
+.CartModal{
+  z-index: 1;
+  width: 400px;
+  height: 100vh;
+  position: absolute;
+  border-radius: 10px;
+  background-color:   #3a3b40;
+}
+
+.CartContainer{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ButtonCart{
+  position: relative;
+  z-index: 2;
+}
+

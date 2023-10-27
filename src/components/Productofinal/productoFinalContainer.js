@@ -8,7 +8,7 @@ const ProductoFinalContainer = () => {
   let{id} = useParams()
 
   useEffect(() => {
-    getProductById(1)
+    getProductById(id)
     .then(response => {
       setProduct(response)
     })

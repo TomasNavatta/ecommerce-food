@@ -1,3 +1,4 @@
+import { Cart } from '../../Cart/Cart';
 import CartWidget from '../CartWidget/CartWidget';
 import '../stylesshets/NavBar.css';
 import logo from './assets/logo (3).png';
@@ -19,8 +20,11 @@ function NavBar() {
         <li><Link to={"/category/promociones"}>promociones</Link></li>
         <li><Link to={"/category/nosotros"}>Nosotros</Link></li>
       </ul>
+      <div className='iconsContainer'>
       <i className='SignUp'><FaRegUserCircle/></i>
-      <CartWidget />
+      <Cart />
+      </div>
+    
     </nav>
   );
 }

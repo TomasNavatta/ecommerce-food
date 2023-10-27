@@ -9,6 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1000;
 }
 
 .styleImgDatails {
@@ -19,55 +20,84 @@
     object-fit: cover; /* Asegura que la imagen se ajuste sin distorsionarse */
 }
 /* Estilos para el contenedor del modal */
-.modal-container {
-    overflow: hidden;
-    width: 40%;
-    min-height: 30%;
+
+.cardModal{
+    width: 500px; 
+    border: 1px solid #ccc; 
     background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-   
-    position: relative; /* Agrega posición relativa para posicionar el botón */
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+    text-align: center; 
+    position: relative;
 }
+
 
 .imgContainer{
     text-align: center;
 }
 
-.buttonModal{   
-    width: 20%;
-    background: #333;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    margin-bottom: 1rem;
-    cursor: pointer;
+.cardModalImage{
     margin-top: 10px;
-    float: right;
+    width: 100%; 
+    border-radius: 5px; 
+}
+
+.cardModalTitle{
+    font-size: 1.5em; 
+    margin-top: 10px; 
+    color: #333; 
+}
+
+.cardModalInfo{
+    margin-top: 15px; 
+    color: #666; 
+}
+.footerModal{
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+}
+.buttonModal{   
+    background: transparent;
+    border: none;
+    color: red;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s;
+    padding: 10px 20px;
+    border-radius: 12px;
+    
+}
+
+.buttonModal:hover{
+    background-color: rgba(255, 0, 0, 0.2);
+    border-radius: 12px;
 }
 
 .buttonModalComprar{
     background: #333;
-    color: #fff;
     border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    margin-bottom: 1rem;
-    margin-right: 2rem;
+    color: #fff;
+    font-size: 1rem;
     cursor: pointer;
-    margin-top: 10px;
-    float: right;
+    border-radius: 12px;
+    padding: 10px 20px;
+    margin-left: 10px;
+   
 
 }
 
 .closeModal{
-    color: #333;
     position: absolute;
-    top: 0  ;
-    right: 16px;
-    font-size: 40px;
+    top: -8px;
+    right: 10px;
+    color: #333;
+    font-size: 25px;
     cursor: pointer;
     
 }
