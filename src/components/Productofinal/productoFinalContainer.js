@@ -4,26 +4,29 @@ import ProductoFinal from './productoFinal';
 import { useParams } from 'react-router-dom';
 
 const ProductoFinalContainer = () => {
-  const [product, setProduct] = useState(null)
-  let{id} = useParams()
+  const [product, setProduct] = useState(null);
+  const { id } = useParams(); // Extraer id directamente de useParams()
+  console.log('ID:', id);
 
   useEffect(() => {
     getProductById(id)
-    .then(response => {
-      setProduct(response)
-    })
-    .catch(error => {
-      console.error(error)
-    })
-  },[id])
+      .then(response => {
+        setProduct(response);
+        console.log('Response:', response);
+      })
+      .catch(error => {
+        console.error(error);
+      });
+  }, [id]);
 
-  return(
+  console.log(product);
+
+  return (
     <div>
-     <ProductoFinal  {...product}/>
-
-
+      {/* Pasar directamente el id como una propiedad */}
+      <ProductoFinal {...product} id={id} />
     </div>
-  )
-  }
+  );
+};
 
 export default ProductoFinalContainer;

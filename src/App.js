@@ -12,6 +12,8 @@ import DetailsCard from './components/DetailsCard/detailsCard';
 import ProductoFinalContainer from './components/Productofinal/productoFinalContainer';
 import { CartContext } from './context/CartContext';
 import Cartprovider from './context/CartContext';
+import { ItemCart } from './Cart/ItemCart';
+import FinalizarCompra from './Cart/FinalizarCompra';
 
 
 
@@ -31,6 +33,7 @@ function App() {
         <Route path='/category/nosotros' element={<Nosotros/>} />
         <Route path='*'element={<NotFound/>}/>
           <Route path='/detalle/:id' element={<ProductoFinalContainer/>} />
+          <Route path='/checkout/cart' element={<FinalizarCompra/>} />
         </Routes>
         </BrowserRouter> 
         </Cartprovider>

@@ -81,3 +81,11 @@
     margin-left: 10px;
 }
 
+.buttonComprarProductoFinal:active{
+  transform: translateY(1px)
+}
+
+.precioFinal{
+  text-align: center;
+  margin-top: 3rem;
+}

@@ -3,8 +3,10 @@ import ItemCount from '../Count/Count';
 import '../stylesshets/productoFinal.css'
 import React, { useState, useContext } from 'react';
 
-const ProductoFinal = ({ image, title, info, stock, id }) => {
+const ProductoFinal = ({ image, title, info, stock, id, price }) => {
     const {addProduct} = useContext(cartContext)
+
+    
 
    
     
@@ -40,12 +42,16 @@ const ProductoFinal = ({ image, title, info, stock, id }) => {
                 </li>
             </ul>
             <ItemCount initial={1} stock={stock} onAndd={(quantity) => console.log('cantidad agregada', quantity)}/>
+            <div className='precioFinal'>
+                <p>${price}</p>
+            </div>
             <div className='buttonComprarproductoFinalContainer'>
             <button onClick={() => {
                   const Products = {
                     image,
                     title,
                     stock,
+                    price,
                     id
                   };
                    addProduct(Products)

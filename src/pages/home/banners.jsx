@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import '../../components/stylesshets/home.css'
+import { Link } from 'react-router-dom';
 
 
 function Banners() {
@@ -18,8 +19,8 @@ function Banners() {
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem sed praesentium velit? Nulla saepe cupiditate ipsam laudantium labore sequi quos nostrum alias, veritatis dolor, odio ad est, maxime ea minima?
                 </p>
                 <div className='botones'>
-                  <button className='btn-1'>Promociones</button>
-                  <button className='btn-1'>Menu</button>
+                  <Link to={"/category/promociones"}><button className='btn-1'>Promociones</button></Link>
+                  <Link to={"/category/menu"}><button className='btn-1'>Menu</button></Link>
                 </div>
               </div>
               <div className='slider-img'>

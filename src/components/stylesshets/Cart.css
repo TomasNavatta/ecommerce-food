@@ -4,7 +4,9 @@
   height: 100vh;
   position: absolute;
   border-radius: 10px;
-  background-color:   #3a3b40;
+  background-color:   rgb(197, 197, 197);
+  text-align: center;
+  padding: 20px;
 }
 
 .CartContainer{
@@ -17,3 +19,70 @@
   z-index: 2;
 }
 
+.buttonContainer {
+  position: absolute;
+  bottom: 60px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.buttonCarrito {
+  width: 15em;
+  display: block;
+  border-radius: 10rem;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 40px;
+  margin-right: 0;
+}
+
+
+
+.vaciarCarrito{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);;
+}
+
+.crossContainer{
+  cursor: pointer;
+  position: relative;
+  right:1rem;
+  top: 0.5rem;
+}
+
+.carrito{
+  
+  border-bottom: 1px solid #000000;
+}
+
+.linkWithoutUnderline {
+  text-decoration: none;
+}
+
+.counter-products{
+  height: 20px;
+     width: 20px;
+     border-radius: 999px;
+     position: absolute;
+     top: 45px;
+     right: 28px;
+     background-color: #fff;
+     font-size: 12px;
+     font-weight: bold;
+     color: #000;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}

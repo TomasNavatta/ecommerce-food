@@ -4,6 +4,7 @@ import Modals from '../modal/modal';
 
 const DetailsCard = ({ isOpen, onClose, id }) => {
   const [product, setProduct] = useState(null)
+  const ProductId = id
   useEffect(() => {
     getProductById(id)
     .then(response => {
@@ -12,11 +13,11 @@ const DetailsCard = ({ isOpen, onClose, id }) => {
     .catch(error => {
       console.error(error)
     })
-  },[])
+  },[id])
 
   return(
     <div>
-     <Modals isOpen={isOpen} onClose={onClose} {...product}/>
+     <Modals isOpen={isOpen} onClose={onClose} {...product} id={ProductId}/>
 
 
     </div>

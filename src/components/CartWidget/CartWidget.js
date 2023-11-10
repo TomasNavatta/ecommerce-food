@@ -8,7 +8,7 @@ const CartWidget = () => {
         <div className='carrito'>
            <i className="imgCarrito" >< FaShoppingBag /></i>
             {/* <img className="imgCarrito" src={cart}/> */}
-            0
+            
            
         </div>
     )

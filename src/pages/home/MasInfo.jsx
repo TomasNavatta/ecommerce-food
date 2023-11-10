@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import '../../components/stylesshets/home.css'
 const Masinfo = () => {
     return(
@@ -12,7 +13,7 @@ const Masinfo = () => {
                       magnam impedit, maxime totam, esse excepturi amet et quod
                        suscipit dignissimos sit molestias
                      blanditiis vel consequatur.</p>
-                     <button className="btn-2">Mas Informacion</button>
+                     <Link to={"/category/nosotros"}><button className="btn-2">Mas Informacion</button></Link>
             </div>
 
         </section>
