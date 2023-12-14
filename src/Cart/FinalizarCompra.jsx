@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 import { cartContext } from "../context/CartContext";
 import '../components/stylesshets/finalizarCompra.css'
-import Formulario from "../components/form/formulario";
+import '../components/stylesshets/Formulario.css'
 import { getFirestore, doc, getDoc, collection, getDocs, addDoc } from 'firebase/firestore'
 
 const FinalizarCompra =() => {

@@ -16,6 +16,8 @@ export const Cart = () => {
        setProductLength(cantidadDeProductos)
     })
 
+    const precioTotal = cart.reduce((previous, current) => previous + current.amount * current.price, 0)
+
 
 
 
@@ -66,6 +68,10 @@ export const Cart = () => {
                 {cart.map(productosCart => <ItemCart key={productosCart.id}{...productosCart} />)}
                 </div>
                 )}
+                <div>
+                    <p>total:${precioTotal}</p>
+               
+                </div>
                 <div   className="buttonContainer" >
                 <button className="buttonCarrito"   onClick={clearCart}>Vaciar Carrito</button>
                 <Link to={"/checkout/cart"} className="linkWithoutUnderline"><button className="buttonCarrito"  >Iniciar Compra</button></Link>
